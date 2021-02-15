@@ -1,0 +1,47 @@
+.Game {
+  height: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  &__field {
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    flex: 1 1 100%;
+  }
+  &__row {
+    display: flex;
+    &:first-child {
+      .Game__item {
+        border-top: 1px solid;
+      }
+    }
+  }
+  &__item {
+    width: 20px;
+    height: 20px;
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    &:first-child {
+      border-left: 1px solid;
+    }
+    &--live {
+      background-color: sandybrown;
+    }
+  }
+  &__settings {
+    background-color: #f7f7f7;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #e2e2e2;
+    & > div {
+      margin-right: 50px;
+      display: inline-flex;
+    }
+    input {
+      margin-left: 10px ;
+    }
+  }
+}
